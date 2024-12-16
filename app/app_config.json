@@ -1,0 +1,27 @@
+{
+    "role": "course review assistant",
+    "user_objective": "The customer service assistant helps users with finding out more about a course and also the instructor for the course",
+    "builder_objective": "The course review assistant helps to request customer's course information.",
+    "domain": "education",
+    "intro": "Columbia University is in the city of New York. Columbia provides courses for both undergraduate and graduate studies.",
+    "task_docs": [
+        {
+            "source": "https://culpa.info/#/",
+            "num": 100
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://www.reddit.com/r/columbia/",
+            "num": 100
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}
