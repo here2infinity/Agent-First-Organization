@@ -7,13 +7,13 @@
     "task_docs": [
         {
             "source": "https://culpa.info/#/",
-            "num": 100
+            "num": 5
         }
     ],
     "rag_docs": [
         {
             "source": "https://www.reddit.com/r/columbia/",
-            "num": 100
+            "num": 5
         }
     ],
     "tasks": [],

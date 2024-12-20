@@ -35,7 +35,7 @@ class NLUOpenAIAPI(OpenAIAPI):
         logger.info(f"gpt system_prompt for {debug_text} is \n{sys_prompt}")
         dialog_history = {"role": "system", "content": sys_prompt}
         completion = self.client.chat.completions.create(
-            model=params.get("model_type_or_path", "gpt-4o"),
+            model=params.get("model_type_or_path", "gpt-4o-mini"),
             response_format={"type": "json_object"} if response_format=="json" else {"type": "text"},
             messages=[dialog_history],
             n=1,
@@ -132,7 +132,7 @@ class SlotFillOpenAIAPI(OpenAIAPI):
         logger.info(f"gpt system_prompt for {debug_text} is \n{sys_prompt}")
         dialog_history = {"role": "system", "content": sys_prompt}
         completion = self.client.beta.chat.completions.parse(
-            model=params.get("model_type_or_path", "gpt-4o"),
+            model=params.get("model_type_or_path", "gpt-4o-mini"),
             messages=[dialog_history],
             response_format=Slots,
             n=1,
