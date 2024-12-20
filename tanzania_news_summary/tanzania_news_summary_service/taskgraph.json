@@ -1,0 +1,846 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello! I'm your News Summary Assistant, here to keep you updated on the latest happenings in Tanzania. What news topic are you interested in today?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the latest sports news summaries from Tanzania: 1. [Team A wins the championship], 2. [Player B signs a new contract], 3. [Event C scheduled for next month].",
+                    "task": "Provide summaries of the latest sports news in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Hello! Are you interested in summaries of specific football matches or would you like general news about recent football events in Tanzania?",
+                    "task": "Greet the user and inquire if they are looking for summaries of specific football matches or general news about recent football events in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Based on the user's response, either retrieve summaries of specific matches or general football news using the RAGWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the summaries of the latest matches: Team A vs Team B ended with a score of 2-1, with a standout performance from Player X who scored both goals for Team A.",
+                    "task": "Present the user with the summarized information, highlighting key events, scores, and any standout performances from the matches.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like more detailed information about a specific match or player? Or perhaps summaries of additional matches?",
+                    "task": "Ask the user if they would like more detailed information about a specific match or player, or if they want summaries of additional matches.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Sure! I can provide more details about the match you are interested in. Just let me know which match or player you'd like to know more about.",
+                    "task": "Provide further details or additional summaries as requested, ensuring to clarify any specific interests or follow-up questions the user may have.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you interested in the latest cricket news and updates in Tanzania?",
+                    "task": "Ask the user if they are interested in the latest cricket news and updates in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "What type of cricket news would you like to receive? Match summaries, player updates, or upcoming fixtures?",
+                    "task": "Inquire if the user has specific preferences regarding the type of cricket news they would like to receive (e.g., match summaries, player updates, upcoming fixtures).",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the latest updates on the cricket matches in Tanzania: [Summarized news].",
+                    "task": "Retrieve and summarize the latest cricket news and updates based on the user's preferences.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here\u2019s the latest cricket news. Would you like more details on any specific topic?",
+                    "task": "Present the summarized cricket news to the user and ask if they would like more details on any specific topic.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "If you want more updates or information about cricket news in Tanzania, just let me know!",
+                    "task": "Offer to provide additional updates or information about cricket news in Tanzania as needed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you interested in recent basketball events, general news, or specific topics related to basketball in Tanzania?",
+                    "task": "Ask the user if they are looking for recent basketball events, general news, or specific topics related to basketball in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Based on the user's response, retrieve relevant summaries of basketball events and news from the internal documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the latest basketball events in Tanzania: 1. Tanzania vs Kenya match summary, 2. Recent player transfers. Would you like more details on any specific event?",
+                    "task": "Present the summarized information to the user, highlighting key events or news articles.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like more details on a specific event or summaries on other basketball topics?",
+                    "task": "Ask the user if they would like more details on a specific event or if they need summaries on other topics.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "16",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you satisfied with the information provided, or do you need further assistance?",
+                    "task": "Confirm if the user is satisfied with the information provided or if they need further assistance.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "17",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you looking for specific boxing events or would you prefer general news summaries related to boxing in Tanzania?",
+                    "task": "Ask the user if they are looking for specific boxing events or general news summaries related to boxing in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "18",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Based on the user's response, retrieve and summarize the latest boxing news or events in Tanzania using the RAGWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "19",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the latest boxing events and news in Tanzania: [summary]. Would you like more detailed information on any specific topic?",
+                    "task": "Present the summarized news or events to the user and ask if they would like more detailed information on any specific topic.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "20",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are more details on the event: [detailed information]. Is there anything else you would like to know?",
+                    "task": "If the user requests more details, provide additional context or information on the selected news/event and ask if they would like to know anything else.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "21",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "To summarize, we discussed [summary of topics]. Do you need any further assistance regarding boxing news or anything else?",
+                    "task": "Conclude the interaction by summarizing what has been discussed and ask if the user needs any further assistance regarding boxing news or other topics.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "22",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you looking for specific types of initiatives, like funding programs, training facilities, or community support for female athletes?",
+                    "task": "Ask the user if they are looking for specific types of initiatives, such as funding programs, training facilities, or community support for female athletes.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "23",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I found several initiatives focused on funding programs and training facilities for female athletes. Here\u2019s a summary of what I found...",
+                    "task": "Based on the user's input, search the internal documentation for relevant initiatives and provide a summary of the findings.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "24",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like more detailed information about any specific initiatives, like eligibility criteria or application processes?",
+                    "task": "Inquire if the user would like more detailed information about any specific initiatives mentioned, such as eligibility criteria or application processes.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "25",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you interested in additional resources or success stories of female athletes in Tanzania?",
+                    "task": "Confirm if the user is interested in additional resources or related topics, such as success stories of female athletes in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "26",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are some links and resources for you to explore further information about the initiatives: [link1], [link2].",
+                    "task": "Provide links or resources for the user to explore further information or assistance regarding the initiatives.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "27",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Hello! Are you interested in any specific sports, or would you like general insights on how sports impact communities in Tanzania?",
+                    "task": "Greet the user and inquire if they are interested in specific sports or general insights about how sports impact communities in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "28",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Based on the user's response, retrieve relevant summaries and insights from the internal documentation that specifically address the impact of the mentioned sports on Tanzanian communities.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "29",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are some insights on how football promotes community engagement and youth development in Tanzania. For instance, local teams often bring youth together, fostering social cohesion through teamwork and sportsmanship.",
+                    "task": "Present the user with the summarized insights, highlighting key points such as community engagement, youth development, and social cohesion.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "30",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like more detailed information on a specific sport's impact, or do you have any other questions about sports in Tanzanian communities?",
+                    "task": "Ask the user if they would like more detailed information on a specific sport or aspect of community impact, or if they have any other questions.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "31",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your interest in basketball, here are some statistics showing how basketball programs have increased youth participation and improved social skills among participants in urban areas.",
+                    "task": "If the user requests more information, retrieve and provide additional details or statistics related to the requested topic, ensuring to clarify the relevance to the community.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "32",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Is there anything else you would like to know, or would you like to explore another topic related to sports and communities in Tanzania?",
+                    "task": "Conclude the interaction by asking if the user needs further assistance or if they would like to explore another topic related to sports and communities in Tanzania.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to get sports news in Tanzania",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "2",
+            {
+                "intent": "User wants to know about football events",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "5",
+            "6",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "7",
+            {
+                "intent": "User wants to learn about cricket updates",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User is interested in basketball news",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "17",
+            {
+                "intent": "User wants updates on boxing events",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "18",
+            "19",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "20",
+            "21",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "22",
+            {
+                "intent": "User seeks information on sports initiatives for women",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "22",
+            "23",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "23",
+            "24",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "24",
+            "25",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "25",
+            "26",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "27",
+            {
+                "intent": "User wants to understand the impact of sports on local communities",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "28",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "28",
+            "29",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "29",
+            "30",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "30",
+            "31",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "31",
+            "32",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "news summary assistant",
+    "user_objective": "The news summary assistant helps users get summaries of what is happening in Tanzania. The goal is to find information about Tanzania",
+    "builder_objective": "The summary assistant helps to request the customer's news domain that they are interested in.",
+    "domain": "news",
+    "intro": "Tanzania is a developing country in East Africa",
+    "task_docs": [
+        {
+            "source": "https://www.ippmedia.com/the-guardian",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://allafrica.com/tanzania/",
+            "num": 10
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}

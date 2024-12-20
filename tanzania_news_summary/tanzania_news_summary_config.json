@@ -1,0 +1,27 @@
+{
+    "role": "news summary assistant",
+    "user_objective": "The news summary assistant helps users get summaries of what is happening in Tanzania. The goal is to find information about Tanzania",
+    "builder_objective": "The summary assistant helps to request the customer's news domain that they are interested in.",
+    "domain": "news",
+    "intro": "Tanzania is a developing country in East Africa",
+    "task_docs": [
+        {
+            "source": "https://www.ippmedia.com/the-guardian",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://allafrica.com/tanzania/",
+            "num": 10
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}

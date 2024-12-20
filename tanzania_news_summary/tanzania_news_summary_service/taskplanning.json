@@ -1,0 +1,69 @@
+[
+    {
+        "task_name": "Provide summaries of the latest sports news in Tanzania",
+        "steps": [
+            "Provide summaries of the latest sports news in Tanzania"
+        ]
+    },
+    {
+        "task_name": "Provide summaries of recent football events and matches in Tanzania",
+        "steps": [
+            "Greet the user and inquire if they are looking for summaries of specific football matches or general news about recent football events in Tanzania.",
+            "Based on the user's response, either retrieve summaries of specific matches or general football news using the RAGWorker.",
+            "Present the user with the summarized information, highlighting key events, scores, and any standout performances from the matches.",
+            "Ask the user if they would like more detailed information about a specific match or player, or if they want summaries of additional matches.",
+            "Provide further details or additional summaries as requested, ensuring to clarify any specific interests or follow-up questions the user may have."
+        ]
+    },
+    {
+        "task_name": "Provide summaries of the latest cricket news and updates in Tanzania",
+        "steps": [
+            "Ask the user if they are interested in the latest cricket news and updates in Tanzania.",
+            "Inquire if the user has specific preferences regarding the type of cricket news they would like to receive (e.g., match summaries, player updates, upcoming fixtures).",
+            "Retrieve and summarize the latest cricket news and updates based on the user's preferences.",
+            "Present the summarized cricket news to the user and ask if they would like more details on any specific topic.",
+            "Offer to provide additional updates or information about cricket news in Tanzania as needed."
+        ]
+    },
+    {
+        "task_name": "Provide summaries of basketball events and news in Tanzania",
+        "steps": [
+            "Ask the user if they are looking for recent basketball events, general news, or specific topics related to basketball in Tanzania.",
+            "Based on the user's response, retrieve relevant summaries of basketball events and news from the internal documentation.",
+            "Present the summarized information to the user, highlighting key events or news articles.",
+            "Ask the user if they would like more details on a specific event or if they need summaries on other topics.",
+            "Confirm if the user is satisfied with the information provided or if they need further assistance."
+        ]
+    },
+    {
+        "task_name": "Provide summaries of boxing news and events happening in Tanzania",
+        "steps": [
+            "Ask the user if they are looking for specific boxing events or general news summaries related to boxing in Tanzania.",
+            "Based on the user's response, retrieve and summarize the latest boxing news or events in Tanzania using the RAGWorker.",
+            "Present the summarized news or events to the user and ask if they would like more detailed information on any specific topic.",
+            "If the user requests more details, provide additional context or information on the selected news/event and ask if they would like to know anything else.",
+            "Conclude the interaction by summarizing what has been discussed and ask if the user needs any further assistance regarding boxing news or other topics."
+        ]
+    },
+    {
+        "task_name": "Provide information about initiatives supporting female athletes in Tanzania",
+        "steps": [
+            "Ask the user if they are looking for specific types of initiatives, such as funding programs, training facilities, or community support for female athletes.",
+            "Based on the user's input, search the internal documentation for relevant initiatives and provide a summary of the findings.",
+            "Inquire if the user would like more detailed information about any specific initiatives mentioned, such as eligibility criteria or application processes.",
+            "Confirm if the user is interested in additional resources or related topics, such as success stories of female athletes in Tanzania.",
+            "Provide links or resources for the user to explore further information or assistance regarding the initiatives."
+        ]
+    },
+    {
+        "task_name": "Provide summaries and insights on how sports affect communities in Tanzania",
+        "steps": [
+            "Greet the user and inquire if they are interested in specific sports or general insights about how sports impact communities in Tanzania.",
+            "Based on the user's response, retrieve relevant summaries and insights from the internal documentation that specifically address the impact of the mentioned sports on Tanzanian communities.",
+            "Present the user with the summarized insights, highlighting key points such as community engagement, youth development, and social cohesion.",
+            "Ask the user if they would like more detailed information on a specific sport or aspect of community impact, or if they have any other questions.",
+            "If the user requests more information, retrieve and provide additional details or statistics related to the requested topic, ensuring to clarify the relevance to the community.",
+            "Conclude the interaction by asking if the user needs further assistance or if they would like to explore another topic related to sports and communities in Tanzania."
+        ]
+    }
+]
